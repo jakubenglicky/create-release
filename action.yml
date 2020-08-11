@@ -5,6 +5,12 @@ inputs:
   tag_name:
     description: 'The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag'
     required: true
+  pr_number:
+    description: 'The PR Number'
+    required: true
+  author:
+    description: 'The PR author'
+    required: true
   release_name:
     description: 'The name of the release. For example, `Release v1.0.1`'
     required: true
